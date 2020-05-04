@@ -1,0 +1,24 @@
+{
+	"name": "vue-markdown-renderer",
+	"version": "0.1.0",
+	"description": "Customizable Markdown renderer for Vue",
+	"keywords": [
+		"vue",
+		"markdown",
+		"marked"
+	],
+	"homepage": "https://github.com/TobiasSN/vue-markdown-renderer",
+	"bugs": "https://github.com/TobiasSN/vue-markdown-renderer/issues",
+	"license": "LGPL-3.0-or-later",
+	"author": "Tobias SN",
+	"browser": "lib/index.js",
+	"repository": "TobiasSN/vue-markdown-renderer",
+	"scripts": {
+		"example:install": "cd example && npm install",
+		"example:serve": "cd example && npm run serve",
+		"example:build": "cd example && npm run build"
+	},
+	"dependencies": {
+		"marked": "^1.0.0"
+	}
+}
