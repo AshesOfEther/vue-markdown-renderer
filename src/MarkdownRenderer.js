@@ -108,7 +108,7 @@ function processTokens(tokens, createElement, config) {
 		switch(typeof(mapping)) {
 			case "function":
 				// This mapping needs to do something out of the ordinary.
-				return mapping({token, createElement, config});
+				return mapping({token, createElement, config, processTokens});
 			case "string":
 				// This should be the key of a value in config.elements.
 				return createElement(
