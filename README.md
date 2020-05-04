@@ -80,4 +80,4 @@ The component is called `markdown-renderer` and takes a single prop, `value`, wh
 
 ## License
 
-This project is licensed under the Lesser General Public License version 3 or later. You can find the full license [here](LICENSE)
+This project is licensed under the Lesser General Public License version 3 or later. You can find the full license [here](LICENSE).
