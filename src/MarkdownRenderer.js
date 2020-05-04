@@ -49,7 +49,9 @@ const componentMapping = {
 			))
 		]
 	),
-	text: ({token}) => token.text,
+	// We need to use the raw text, as it isn't sanitized for HTML. Using the sanitized
+	// text would cause weirdness like "Y&#39;all" instead of "Y'all".
+	text: ({token}) => token.raw,
 	paragraph: "paragraph",
 	// Inline
 	escape: ({token}) => token.text,
