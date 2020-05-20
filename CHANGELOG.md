@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.2
+- Fixed bug where configuration was incorrectly merged with the default one.
+
 ## 0.2.1
 - Fixed bug where config wasn't being properly merged with the default config.
 
