@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.3
+- Fixed bug where Marked wasn't getting its config.
+
 ## 0.2.2
 - Fixed bug where configuration was incorrectly merged with the default one.
 
