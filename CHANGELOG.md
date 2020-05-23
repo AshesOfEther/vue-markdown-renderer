@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.4
+- The value prop on the renderer component is now required.
+
 ## 0.2.3
 - Fixed bug where Marked wasn't getting its config.
 
