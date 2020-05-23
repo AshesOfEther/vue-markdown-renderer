@@ -69,7 +69,13 @@ export default {
 		- `token`: The token that's being rendered. You can see what tokens look like [here](https://marked.js.org/demo/?outputType=lexer&text=**This%20is%20a%20bold%20piece%20of%20text%20that%20contains%20a%20%60code%20span%60**).
 		- `createElement`: A function that, as the name implies, creates an element. [More info here](https://vuejs.org/v2/guide/render-function.html#createElement-Arguments).
 		- `config`: The configuration, including default values for anything that you didn't set.
-		
+		- `processTokens`: If the token has subtokens `token.tokens`, this function should be called with them, `createElement` and `config`, and the return value should be passed as the last argument to `createElement`, like this:
+		  ```js
+		  ({token, createElement, config}) => createElement(
+		  	config.elements.headingPrefix + token.depth,
+		  	processTokens(token.tokens, createElement, config)
+		  )
+		  ```		
 		The function should output either a string, which will be inserted as a plain piece of text, or the value returned from calling `createElement`.
 	- A string, which is the name of an element or component.
 	- A component, like when you import a `.vue` file.
