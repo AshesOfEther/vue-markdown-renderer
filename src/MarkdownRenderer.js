@@ -135,7 +135,10 @@ export default {
 		);
 	},
 	props: {
-		value: String
+		value: {
+			type: String,
+			required: true
+		}
 	},
 	computed: {
 		tokens() {
