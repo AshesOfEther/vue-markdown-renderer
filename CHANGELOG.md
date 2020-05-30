@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.5
+- It's now possible to pass tokenizer and renderer functions to Marked without overwriting the defaults.
+
 ## 0.2.4
 - The value prop on the renderer component is now required.
 
