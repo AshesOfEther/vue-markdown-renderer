@@ -142,7 +142,7 @@ export default {
 	},
 	computed: {
 		tokens() {
-			return marked.lexer(this.value, this.$mdConfig.marked);
+			return marked.lexer(this.value);
 		}
 	}
 }
