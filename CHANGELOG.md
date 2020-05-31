@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.6
+- Fixed bug where email addresses were getting mangled by Marked, which doesn't work the way we render Markdown ([#2](https://github.com/TobiasSN/vue-markdown-renderer/issues/2)).
+
 ## 0.2.5
 - It's now possible to pass tokenizer and renderer functions to Marked without overwriting the defaults.
 
