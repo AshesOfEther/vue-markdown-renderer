@@ -1,5 +1,7 @@
 export default {
-	marked: {},
+	marked: {
+		mangle: false
+	},
 	mappings: {},
 	elements: {
 		code: "code",

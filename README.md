@@ -43,7 +43,7 @@ export default {
 
 ### Configuration
 
-- `marked`: Will be passed to [`marked.use`](https://marked.js.org/#/USING_PRO.md#use). [More info here](https://marked.js.org/#/USING_ADVANCED.md#options). Note: Passing any renderer functions won't work, since this component uses its own renderer. Use the `mappings` option instead.
+- `marked`: Will be passed to [`marked.use`](https://marked.js.org/#/USING_PRO.md#use). [More info here](https://marked.js.org/#/USING_ADVANCED.md#options). Note: Passing any renderer functions won't work, since this component uses its own renderer. Use the `mappings` option instead. You also shouldn't touch the `mangle` option if you're not server-side rendering. This is because it works by converting every character into an HTML escape code. These won't be parsed when inserted into the DOM. Don't worry, however, as any scraper not smart enough to understand escape codes probably isn't gonna run JS either and let the Markdown render.
 - `elements`: Names of elements and components to be used in the output. Can also take components directly by passing the object you get by importing them. Keys:
 	- `code`
 	- `headingPrefix`
