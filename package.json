@@ -1,6 +1,6 @@
 {
 	"name": "vue-markdown-renderer",
-	"version": "0.2.6",
+	"version": "0.2.7",
 	"description": "Customizable Markdown renderer for Vue",
 	"keywords": [
 		"vue",
