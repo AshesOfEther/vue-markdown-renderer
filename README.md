@@ -1,3 +1,5 @@
+**Warning:** This package is deprecated, and uses a vulnerable version of Marked. It will not receive any updates. Moving away from it is highly recommended.
+
 # Vue Markdown Renderer
 
 This is a customizable Vue component that parses Markdown and renders the output. It differs from just using a parser directly and binding the output to `v-html` in that the output is rendered like any other components which is faster and allows you to for example use `v-simple-table` instead of `table` for tables when using Vuetify.
